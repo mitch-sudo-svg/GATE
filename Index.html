@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GATE Bienes Raíces | Propiedades en Hermosillo</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        <span>GATE</span>
+        <small>BIENES RAÍCES</small>
+    </div>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#propiedades">Propiedades</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="inicio">
+
+    <div class="hero-content">
+
+        <p class="eyebrow">GATE BIENES RAÍCES</p>
+
+        <h1>
+            Encuentra el espacio
+            <span>que buscas.</span>
+        </h1>
+
+        <p class="hero-text">
+            Descubre propiedades en venta y renta
+            en Hermosillo y sus alrededores.
+        </p>
+
+    </div>
+
+
+    <!-- BUSCADOR -->
+
+    <div class="search-box">
+
+        <div class="search-field">
+
+            <label>Operación</label>
+
+            <select id="operationFilter">
+
+                <option value="all">
+                    Venta y renta
+                </option>
+
+                <option value="venta">
+                    Venta
+                </option>
+
+                <option value="renta">
+                    Renta
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="search-field">
+
+            <label>Tipo de propiedad</label>
+
+            <select id="typeFilter">
+
+                <option value="all">
+                    Todos
+                </option>
+
+                <option value="casa">
+                    Casa
+                </option>
+
+                <option value="departamento">
+                    Departamento
+                </option>
+
+                <option value="terreno">
+                    Terreno
+                </option>
+
+                <option value="bodega">
+                    Bodega
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="search-field">
+
+            <label>Zona</label>
+
+            <select id="zoneFilter">
+
+                <option value="all">
+                    Todas las zonas
+                </option>
+
+                <option value="los lagos">
+                    Los Lagos
+                </option>
+
+                <option value="zona poniente">
+                    Zona Poniente
+                </option>
+
+                <option value="centro">
+                    Centro
+                </option>
+
+                <option value="lomas altas">
+                    Lomas Altas
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <button
+            class="search-button"
+            onclick="filterProperties()">
+
+            BUSCAR
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- PROPIEDADES -->
+
+<section
+    class="properties-section"
+    id="propiedades">
+
+    <div class="section-header">
+
+        <div>
+
+            <p class="eyebrow">
+                NUESTRO INVENTARIO
+            </p>
+
+            <h2>
+                Propiedades destacadas
+            </h2>
+
+        </div>
+
+        <span id="resultsCount">
+            0 propiedades
+        </span>
+
+    </div>
+
+
+    <div
+        id="propertiesGrid"
+        class="properties-grid">
+
+    </div>
+
+</section>
+
+
+
+<!-- NOSOTROS -->
+
+<section
+    class="about-section"
+    id="nosotros">
+
+    <div>
+
+        <p class="eyebrow">
+            GATE BIENES RAÍCES
+        </p>
+
+        <h2>
+            Más que encontrar
+            una propiedad.
+        </h2>
+
+    </div>
+
+    <p>
+
+        Te acompañamos durante el proceso de
+        encontrar, vender o rentar un espacio
+        que se adapte a tus necesidades.
+
+    </p>
+
+</section>
+
+
+
+<!-- CONTACTO -->
+
+<section
+    class="contact-section"
+    id="contacto">
+
+    <div>
+
+        <p class="eyebrow">
+            ¿TIENES UNA PROPIEDAD?
+        </p>
+
+        <h2>
+            Hablemos.
+        </h2>
+
+        <p>
+            Si quieres vender o rentar tu propiedad,
+            nuestro equipo puede ayudarte.
+        </p>
+
+    </div>
+
+
+    <a
+        href="https://wa.me/5216620000000"
+        class="contact-button"
+        target="_blank">
+
+        CONTACTAR
+
+    </a>
+
+</section>
+
+</main>
+
+
+
+<footer>
+
+    <div class="logo">
+
+        <span>GATE</span>
+
+        <small>
+            BIENES RAÍCES
+        </small>
+
+    </div>
+
+    <p>
+        © 2026 GATE Bienes Raíces
+    </p>
+
+</footer>
+
+
+
+<script src="js/properties.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
